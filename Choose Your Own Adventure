@@ -1,0 +1,130 @@
+//variables
+int introChoice, middleChoice1, middleChoice2, middleChoice3;
+
+//6 functions
+void intro(int num, string_t name){
+    printf("You have been contacted by a random person going by the name Wolf. Wolf refers to himself as being a man but you know that you cannot trust much of this supposed “man's” identity. He sends you a very mysterious letter telling you that he has exactly what you’ve been searching for. For years you’ve been looking for a small, black diamond; a supposed lost heirloom of an ancient Egyptian family. The letter gives you instructions to go to the outskirts of the city to a tavern called Wild. He says to come alone and unarmed. You have three options. Type “1” if you would like to go to the tavern alone with a small, well concealed dagger to keep yourself protected. Type “2” if you want to go to the tavern with a trusted friend named Oliver. You will both be unarmed in this choice. Type “3” if you want to ignore this letter and continue to search for the relic yourself.");
+    printf("make your middle choice: 1, 2, or 3\n");
+    scanf("%i", &introChoice);
+    while(introChoice != 1 && introChoice != 2 && introChoice != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &introChoice);
+    }
+  
+}
+void middle1(){
+    printf("You chose middle 1. You make your way to the tavern later that evening. The stars are out and shining bright and you feel a shiver up your spine. You finally see the tavern, an old rickety structure made of wood. It looks as if it hasn’t been used for some time but you know that it is still operated by a single owner. You enter the tavern, dagger concealed in a seam of your coat. As you enter you see a hooded figure with a mug in front of them sitting at a table. You check out your surroundings. The tavern is dimly lit and the hooded man is the only person you can see. He quickly stands up brandishing a massive sword, ready to fight at any moment. There are three things you can do. Type “1” if you will pull out your own dagger and would like to engage in combat. You have been trained to fight and know that you stand a chance. Type “2” if you want to de-escalate the situation and attempt to get the information you came for. Type “3” if you want to quickly run away to safety.” ");
+    printf("Make your end choice: 1, 2, or 3\n");
+    scanf("%i", &middleChoice1);
+    while(middleChoice1 != 1 && middleChoice1 != 2 && middleChoice1 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice1);
+    }
+}
+void end1(){
+    printf("You chose end 1. You pull out your dagger expertly and are ready to fight. The man slowly takes off his hood to reveal his face. He has plenty of scars all over his face and looks as if he’s been in plenty of fights before. You slowly advance and he readies to defend. You jump into action attacking with your dagger swinging back and forth. He expertly evades and attempts to counter with his much longer sword. You duck away and are able to use your leg to kick him in the shin. He stumbles slightly and pulls out a small, black ball. He expertly twists the top and rolls it towards you. You don’t know what exactly it is but know that it can’t be good. You jump back as it starts hissing and then explodes into black smoke. You can’t see anything and are coughing violently. You pass out. You wake up with a massive headache and realize that you’re still in the tavern. The man is gone. You are unharmed.");
+    exit (1);
+
+}
+void end2(){
+    printf("You chose end 2. You put your hands up to show that you mean no harm. He lowers his sword slightly. You take a step forward and he quickly backs up, sword at the ready again. You say, “I’m here for the relic.” He pulls back his hood grinning slightly. There are scars all over his face. He replies, “You foolish child. I did not bring it here. I do know where it is however. Perhaps we can work something out.” You reply, “What do you want from me?” He grins again, “I want my son. Oliver.” You stare back in shock. Oliver had never spoken about his family. He has been a good friend and you’re not going to betray him. “No.” you speak out defiantly. “I’ll find another way.” The man frowns and then quickly whips out a small, black ball. He expertly twists the top and rolls it towards you. You don’t know what exactly it is but know that it can’t be good. You jump back as it starts hissing and then explodes into black smoke. You can’t see anything and are coughing violently. You pass out. You wake up with a massive headache and realize that you’re still in the tavern. The man is gone. You are unharmed.");
+    exit (1);
+
+}
+void end3(){
+    printf("You chose end 3. You turn around and quickly run away. You know that you will find another way to find the relic. Fighting for it with an unknown man would not be worth the risk. You turn around to see if the man would give chase but you see nothing. You return home and live to see another day.");
+    exit (1);
+
+}
+void middle2(){
+    printf("You chose middle 2. You go later that evening to the tavern with your friend Oliver. You trust him with your life and are both trained and can fight well, even without a weapon. You enter the tavern and see a hooded man sitting down at a table. No one else can be seen. He growls, “I told you to come alone. But thankfully…you’ve brought me my son.” He pulls off his hood and smiles grimly. He has scars all over his face. I look at Oliver who has gone pale. He quickly backs away. You have three choices. Type “1” if you want to stay around and talk to Oliver’s supposed father. Type “2” if you want to try and take on the  man and fight. He looks to be unarmed but you can’t be sure. Type “3” if you want to grab Oliver and run away back to the city. ");
+    printf("Make your end choice: 1, 2, or 3\n");
+    scanf("%i", &middleChoice2);
+    while(middleChoice2 != 1 && middleChoice2 != 2 && middleChoice2 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice2);
+    }
+}
+void end4(){
+    printf("You chose end 4. You stay and decide to find out more. You end up talking to the man and find out that he is indeed Oliver’s father and has come back to claim his son. Oliver is heavily against the idea and wants nothing to do with his family. You stand there not sure what to do and wait for Oliver to do something. He eventually just leaves and you follow him out, running back to the town. You live to see another day but also gain no information about the relic you seek.");
+    exit (1);
+
+}
+void end5(){
+    printf("You chose end 5. You and Oliver look at each other and act in perfect coordination. You both advance and in a blink of an eye the man pulls out a sword. You both freeze and then Oliver breaks a chair grabbing a wooden leg and brandishing it as a weapon. You back up and attempt the same but the man advances swinging his sword while you and Oliver both evade the blows. You end up grabbing a chair leg and both attack the man. He gets injured and winces at each hit. He is outskilled and outnumbered. However, he quickly backs away and twists a small black ball. He rolls it towards you and it explodes into thick, black smoke. You and Oliver wake up after going unconscious a few hours later and find that the man is gone. You are both somehow unharmed.");
+    exit (1);
+
+}
+void end6(){
+    printf("You chose end 6. You quickly push Oliver out of the door and make a beeline for the city. You run quickly and turn around to make sure no one is chasing. You both make a brief stop when you feel you are far enough away. You are very tired and don’t want to talk about what happened until you get home and feel comfortable. You both make it home unharmed and very tired. You live to see another day but no information is gained about the relic you seek.");
+    exit (1);
+}
+    
+void middle3(){
+    printf("You chose middle 3. You ignore the letter and decide to continue to do your own research. You are then contacted again with another letter and now decide to meet the man at a public square. You feel as if this will be much safer than being in a tavern because it will be in a public area. You are again told to come unarmed and alone but are not sure if you should heed the instructions given. You have three options. Type “1” if you want to go armed with a dagger, but are alone. Type “2” if you want to go unarmed and alone. Type “3” if you want to go armed with a friend named Oliver. ");
+    printf("make your end choice: 1, 2, or 3\n");
+    scanf("%i", &middleChoice3);
+    while(middleChoice3 != 1 && middleChoice3 != 2 && middleChoice3 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice3);
+    }
+}
+void end7(){
+    printf("You chose end 7. You go armed with a dagger and meet the man alone. He seems to know that you’re armed somehow and ends up whipping out his sword. He is angry that you have brought a weapon and threatens to fight you. You have no idea how he knew that you had brought the dagger and are interested in the man’s abilities. However, you know that it would not be wise to fight the man in a public square. You quickly run away and never see the man again. You live to see another day.");
+    exit (1);
+
+}
+void end8(){
+    printf("You chose end 8. You go unarmed and meet the man alone. He explains that he is Oliver’s father and actually has no information about the relic. He simply was attempting to capture your attention so that you could bring his son. He thought that you would have brought his son and is disappointed that you have come alone. You are interested in the entire situation but know that you have better ways to spend your time. You’re disgusted that the man was a fraud and end up walking back home. You never mention the event to Oliver. You live to see another day.");
+    exit (1);
+
+}
+void end9(){
+    printf("You chose end 9. You go armed with your friend Oliver. You find the man exactly where he said he’d be and he takes off his hood with a small smile. He looks at Oliver and reveals that he is his father. Oliver seems to be unhappy with the revelation and stands his ground firmly. He shows no emotion and you stand there interested yet also slightly annoyed that you will gain no information about the relic. You realize that you shouldn’t be here wasting your time and end up leaving with Oliver. You live to see another day.");
+    exit (1);
+}
+
+
+
+
+int main(){  //main program to run (logic)
+    intro(5, "bob");
+    if(1 == introChoice){
+        middle1();
+        if(middleChoice1 == 1){
+            end1();
+        }
+        if(middleChoice1 == 2){
+            end2();
+        }
+        if(middleChoice1 == 3){
+            end3();
+        }   
+    }
+    if(2 == introChoice){
+        middle2();
+        if(middleChoice2 == 1){
+            end4();
+        }
+        if(middleChoice2 == 2){
+            end5();
+        }
+        if(middleChoice2 == 3){
+            end6();
+        }
+    }
+    if(3 == introChoice){
+        middle3();
+        if(middleChoice3 == 1){
+            end7();
+        }
+        if(middleChoice3 == 2){
+            end8();
+        }
+        if(middleChoice3 == 3){
+            end9();
+        }
+    }
+        
+
+}
